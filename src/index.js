@@ -18,7 +18,7 @@ root.render(
     domain={process.env.REACT_APP_AUTH_DOMAIN}
     clientId={process.env.REACT_APP_AUTH_CLIENT_ID}
     authorizationParams={{
-      redirect_uri: "https://react-e-commerce-niko-2.netlify.app/",
+      redirect_uri: window.location.origin,
     }}
   >
     <UserProvider>
